@@ -1,3 +1,9 @@
+// Scrivere un programma che, dati in input due numeri,
+// a e b, calcoli il risultato, in valore assoluto,
+// dell’operazione (a-b).
+// (senza utilizzare funzioni di libreria o istruzioni if-else)
+
+
 using namespace std;
 #include <iostream>
 

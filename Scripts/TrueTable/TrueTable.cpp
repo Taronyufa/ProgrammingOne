@@ -1,3 +1,7 @@
+// Scrivere un programma che calcoli la tabella di verità
+// dell’operatore implicazione (P → Q). Il Programma riceve il
+// valore di P e Q in input dall’utente
+
 using namespace std;
 #include <iostream>
 

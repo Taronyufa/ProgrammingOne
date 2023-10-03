@@ -1,3 +1,7 @@
+// Scrivere un programma che, dati in input i secondi da
+// mezzanotte, li salvi in una variabile e ritorni a video
+// l’equivalente orario in ore, minuti e secondi.
+
 using namespace std;
 #include <iostream>
 

@@ -1,3 +1,10 @@
+// Scrivere un programma che, dati in input due numeri,
+// a e b, li salvi in due variabili distinte, max e min,
+// in cui la prima conterrà il numero maggiore tra i due e la
+// seconda il più piccolo.
+// (senza utilizzare funzioni di libreria o istruzioni if-else o
+// operatore ternario o cicli)
+
 using namespace std;
 #include <iostream>
 

@@ -1,3 +1,8 @@
+// Scrivere un programma che, dati tre input da tastiera (ore,
+// minuti e secondi), li memorizzi in tre variabili distinte e
+// calcoli i secondi da mezzanotte.
+
+
 using namespace std;
 #include <iostream>
 

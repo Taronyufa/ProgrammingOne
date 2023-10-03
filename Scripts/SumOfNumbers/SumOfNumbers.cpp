@@ -1,3 +1,5 @@
+// Dato un numero intero a stampare la somma delle sue cifre
+
 using namespace std;
 #include <iostream>
 

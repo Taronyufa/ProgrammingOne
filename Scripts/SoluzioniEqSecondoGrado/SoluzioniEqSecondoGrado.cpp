@@ -1,3 +1,8 @@
+// Dati in input tre numeri reali, a, b e c, scrivere
+// un programma che calcoli le soluzioni dell’equazione di
+// secondo grado (assumete che il delta sia positivo).
+
+
 using namespace std;
 #include <iostream>
 #include <cmath>
