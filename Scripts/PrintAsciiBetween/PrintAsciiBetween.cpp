@@ -7,16 +7,16 @@ using namespace std;
 
 int main(){
 
-    int a = 1;
-    int b = 0;
+    int a;
+    int b;
 
-    while( a > b && a > 0 && b < 127){
+    do{
         cout << "inserisci a: ";
         cin >> a;
         
         cout << "inserisci b: ";
         cin >> b;
-    }
+    }while ( a > b && a > 0 && b < 127);
 
     while (a <= b){
         cout << char(a) << endl;
