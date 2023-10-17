@@ -12,11 +12,11 @@ void Xor (short &n1, short n2);
 int main(){
 
     short n1, n2;
-    cout<<"Numero 1 : ";
-    cin>>n1;
+    cout << "Numero 1 : ";
+    cin >> n1;
 
-    cout<<"Numero 2 : ";
-    cin>>n2;
+    cout << "Numero 2 : ";
+    cin >> n2;
     
     short n3 = n1, n4 = n2;
 
@@ -29,7 +29,7 @@ int main(){
     Xor(n1, n4);
     Xor(n2, n3);
     
-    cout<<n1<<"  "<<n2<<endl;
+    cout << n1 << "  " << n2 << endl;
 
     return 0;
 }
