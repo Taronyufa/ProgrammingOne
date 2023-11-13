@@ -1,5 +1,5 @@
 // Dati in input due reali (double) in due variabili, scrivere un
-// programma che usi una procedura per scambiare i valori
+// programma che usi una procedura per biare i valori
 // delle due variabili usando il passaggio di parametri per
 // puntatore.
 
