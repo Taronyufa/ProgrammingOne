@@ -55,6 +55,7 @@
         "xutility": "cpp",
         "string": "cpp",
         "array": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "*.obj": "cpp"
     }
 }
