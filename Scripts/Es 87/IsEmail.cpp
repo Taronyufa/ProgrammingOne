@@ -45,6 +45,6 @@ int main(int argc, char * argv []){
     input.close();
 
     cout << nCompat;
-
+ 
     return 0;
 }

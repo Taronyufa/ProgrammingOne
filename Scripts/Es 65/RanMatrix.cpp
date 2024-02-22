@@ -10,12 +10,13 @@ using namespace std;
 #include <cstdlib>
 
 int **generate_matrix(int row, int column);
+void deleteMatrix(int **matrix, int row);
 
 int main(int argc, char * argv []){
     srand(time(NULL));
 
     if (argc != 3){
-        cout << "Usage: ./RanArray.exe <row> <column>";
+        cout << "Usage: ./RanMatrix.exe <row> <column>";
         exit(0);
     }
 
@@ -31,6 +32,8 @@ int main(int argc, char * argv []){
         cout << endl;
     }
 
+    deleteMatrix(mat, row);
+
     return 0;
 }
 
@@ -45,4 +48,13 @@ int **generate_matrix(int row, int column){
     }
 
     return mat;
+}
+
+void deleteMatrix(int **matrix, int row){
+
+    for(int i = 0; i < row; i++){
+        delete[] matrix[row];
+    }
+    
+    delete[] matrix;
 }
