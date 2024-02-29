@@ -1,0 +1,102 @@
+{
+
+	"main": {
+		"prefix": "main",
+		
+		"body": [
+			"using namespace std;"
+			"#include <iostream>"
+			"#include <fstream>"
+			""
+			"int main(int argc, char * argv []){"
+			""
+    		"	return 0;"
+			"}"
+		],
+		
+		"description": "Log output to console"
+	},
+
+	"random": {
+		"prefix": "random",
+		
+		"body": [
+			"#include <cstdlib>"
+			"srand(time(NULL));"
+			"rand() % 10 + 1;"
+		],
+		
+		"description": "Log output to console"
+	},
+
+	"swap": {
+		"prefix": "swap",
+		
+		"body": [
+			"void swap(int &x, int &y){"
+			"	x = x + y;" 
+			"	y = x - y;" 
+			"	x = x - y;"
+			"}"
+		],
+		
+		"description": "Log output to console"
+	},
+
+	"toString": {
+		"prefix": "toString",
+		
+		"body": [
+			"for (int i = 0; i < DIM; i++){cout << arr[i];}"
+		],
+		
+		"description": "Log output to console"
+	},
+
+	"BubbleSort": {
+		"prefix": "BubbleSort",
+		
+		"body": [
+			"int *bubbleSort(int * arr){"
+			"	int controllo = 0;"
+			""
+			"	for (int i = DIM - 1; i > 0 && controllo < DIM; --i){"
+			"		controllo = 0;"
+			"		for (int j = 0; j < i; ++j){"
+			"			if (arr[j] > arr[j+1]){"
+			"				swap(arr[j], arr[j + 1]);"
+			"			}else"
+			"				++controllo;"
+			"		}"
+			"	}"
+			""
+			"	return arr;"
+			"}"
+		],
+		
+		"description": "Log output to console"
+	},
+
+	"input": {
+		"prefix": "input",
+		
+		"body": [
+			"if(argc != 2){"
+			"	cout << Usage: ./CardSniffer.exe <input_file>;"
+			"	exit(0);"
+			"}"
+			""
+			"fstream input;"
+			"input.open(argv[1], ios::in);"
+			""
+			"if(input.fail()){"
+			"	cout << Error: the file does not exist;"
+			"	exit(0);"
+			"}"
+			""
+			"input.close()"
+		],
+		
+		"description": "Log output to console"
+	},
+}

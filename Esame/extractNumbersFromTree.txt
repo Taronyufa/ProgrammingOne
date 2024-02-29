@@ -1,0 +1,60 @@
+// Add hereafter the definition of estrai
+void estrai(const tree* t,int* &l1,int &l1_size,int* &l2,int &l2_size){
+    if(t == NULL)
+        return;
+    l1_size = contaPari(t);
+    l2_size = contaDispari(t);
+    l1 = new int[l1_size];
+    l2 = new int[l2_size];
+    estraiPari(t,l1,l1_size);
+    l1_size = contaPari(t);
+    estraiDispari(t,l2,l2_size);
+    l2_size = contaDispari(t);
+
+}
+// Add here above the definition of estrai
+
+int contaPari(const tree* t){
+    int conta = 0;
+    if(t ==  NULL)
+        return 0;
+    if(t->info%2 == 0){
+        conta++;
+    }
+    conta+=contaPari(t->left);
+    conta+=contaPari(t->right);
+    return conta;
+}
+
+int contaDispari(const tree* t){
+    int conta = 0;
+    if(t ==  NULL)
+        return 0;
+    if(t->info%2 == 1){
+        conta++;
+    }
+    conta+=contaDispari(t->left);
+    conta+=contaDispari(t->right);
+    return conta;
+}
+
+void estraiPari(const tree* t ,int*&l1,int &l1_size){
+    if(t == NULL)
+        return;
+    estraiPari(t->right,l1,l1_size);
+    if(t->info %2 == 0){
+        l1[l1_size-1] = t->info;
+        l1_size--;
+    }
+    estraiPari(t->left,l1,l1_size);
+}
+void estraiDispari(const tree* t,int*&l2,int&l2_size){
+     if(t == NULL)
+        return;
+    estraiDispari(t->right,l2,l2_size);
+    if(t->info %2 == 1){
+        l2[l2_size-1] = t->info;
+        l2_size--;
+    }
+    estraiDispari(t->left,l2,l2_size);
+}
